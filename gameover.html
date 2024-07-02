@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>GrupoPrimario</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box_inner {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            a {
+    opacity: 0.1;
+   }
+   a:hover{
+    opacity: 0.9;
+}
+
+            .left,
+            .rigth {
+                width: 20%;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .innerbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .box {
+            width: 60%;
+        }
+
+        .inner_title {
+            width: 70%;
+            display: flex;
+            align-items: flex-start;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.7rem;
+            font-family: "Play", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            display: flex;
+            flex-direction: row;
+            line-height: 60px;
+            justify-content: center;
+        }
+
+        .gif {
+            width: 20%;
+        }
+
+        .inner_header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+        }
+
+        .inner_header img {
+            width: 20%;
+        }
+
+        .select {
+            display: flex;
+            width: 100%;
+            height: 500px;
+            align-items: center;
+        }
+
+        .game_select p {
+            color: white;
+        }
+
+        .game_select img {
+            width: 100%;
+            margin: 1rem auto;
+            cursor: pointer;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box_inner">
+                    <div class="innerbox">
+                        <div class="gif">
+                        </div>
+                        <div class="box">
+                            <div class="inner_title"></div>
+                            <div class="select">
+                                <div class="game_select">
+                                    <img src="images/09.webp" id="gameImage">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gif">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

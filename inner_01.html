@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <title>GrupoPrimario</title>
+    <style>
+        body {
+            background-color: #0b0211;
+            background-image: url(images/bkg.png);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position-x: center;
+            background-position-y: top;
+            font-family: "Play", sans-serif;
+        }
+
+        .box_inner {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .innerbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxselect {
+            background-image: url(images/bkg02.png);
+            height: 343px;
+            width: 45%;
+            position: absolute;
+            bottom: 0;
+            top: 137px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .c1,
+        .c2,
+        .c3,
+        .c4 {
+            background: #573f9b;
+            width: 59px;
+            height: 51px;
+            position: relative;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .c1 {
+            top: 30px;
+            left: 265px;
+        }
+
+        .c2 {
+            top: -21px;
+            left: 341px;
+        }
+
+        .c3 {
+            top: 4px;
+            left: 264px;
+        }
+
+        .c4 {
+            top: -47px;
+            left: 341px;
+        }
+
+        h1 {
+            font-size: 2.7rem;
+            font-family: "Play", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 60px;
+        }
+
+        .inner_header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .inner_header img {
+            width: 9%;
+            position: absolute;
+            right: 290px;
+            top: 125px;
+        }
+
+        .carousel_box {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            background-color: #ba81ff;
+            padding: 2rem;
+
+            .icon_gif {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 20px;
+
+                .exit {
+                    background-color: #ffc858;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0.2rem;
+                    font-family: "Play", sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                    -webkit-box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                    -moz-box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                }
+
+                .name,
+                .description {
+                    color: #7a58bf;
+                    font-weight: bold;
+                    background-color: white;
+                    padding: 0.2rem;
+                    box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                    -webkit-box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                    -moz-box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                }
+
+                .guia {
+                    display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+                    p {
+                        color: white;
+                        line-height: 17px;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 0.8rem;
+                    }
+
+                    img {
+                        margin: 10px auto;
+                        padding: 0px;
+                    }
+                }
+
+                .line {
+                    width: 100%;
+                    height: 11px;
+                    background-color: white;
+                }
+            }
+
+            .carousel-inner {
+                width: 60%;
+            }
+
+            img {
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            .img_box {
+                background: white;
+                padding: 1rem;
+                box-shadow: 11px 6px 0px 3px rgba(45, 33, 94, 1);
+                -webkit-box-shadow: 11px 6px 0px 3px rgba(45, 33, 94, 1);
+                -moz-box-shadow: 11px 6px 0px 3px rgba(45, 33, 94, 1);
+            }
+
+            .box_header {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                border-bottom: 1px solid #7a58bf;
+                padding-bottom: 0.8rem;
+                align-items: center;
+
+                .title {
+                    width: 50%;
+                    color: #7a58bf;
+                    font-weight: bold;
+                }
+
+                .coing {
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+
+                    img {
+                        width: 10%;
+                    }
+                }
+            }
+        }
+
+        .modal-content {
+            background-color: #7a58bf !important;
+
+            .modal-header {
+                background: #18132c;
+                display: flex;
+                justify-content: flex-end;
+
+                .close {
+                    opacity: 1 !important;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                img {
+                    width: 15%;
+                    filter: invert(1)
+                }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: -11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box_inner">
+                    <div class="inner_header"><img src="images/04.webp"></div>
+                    <div class="innerbox">
+                        <div class="boxselect">
+                            <div class="c1" data-target="#gameModal" data-toggle="modal"></div>
+                            <div class="c2" data-target="#gameModal" data-toggle="modal"></div>
+                            <div class="c3" data-target="#gameModal" data-toggle="modal"></div>
+                            <div class="c4" data-target="#gameModal" data-toggle="modal"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/10.webp">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel_box">
+                                    <div class="icon_gif">
+                                        <div class="name">NFT NAME</div>
+                                        <div class="line"></div>
+                                        <div class="description">Description</div>
+                                        <div class="guia">
+                                            <p>"Thank You Mario, But Our Princess is in Another Castle"</p>
+                                            <img src="images/15.webp">
+                                        </div>
+                                        <a type="button" data-dismiss="modal" aria-label="Close">
+                                            <div class="exit">EXIT</div>
+                                        </a>
+                                    </div>
+                                    <div class="img_box">
+                                        <div class="box_header">
+                                            <div class="title">You Won</div>
+                                            <div class="coing">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                            </div>
+                                        </div>
+                                        <img class="d-block" src="images/base.png" alt="First slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel_box">
+                                    <div class="icon_gif">
+                                        <div class="name">NFT NAME</div>
+                                        <div class="line"></div>
+                                        <div class="description">Description</div>
+                                        <div class="guia">
+                                            <p>"Thank You Mario, But Our Princess is in Another Castle"</p>
+                                            <img src="images/16.webp">
+                                        </div>
+                                        <a type="button" data-dismiss="modal" aria-label="Close">
+                                            <div class="exit">EXIT</div>
+                                        </a>
+
+                                    </div>
+                                    <div class="img_box">
+                                        <div class="box_header">
+                                            <div class="title">You Won</div>
+                                            <div class="coing">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                            </div>
+                                        </div>
+                                        <img class="d-block" src="images/base.png" alt="First slide">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
