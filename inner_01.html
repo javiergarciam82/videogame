@@ -51,7 +51,7 @@
         .c2,
         .c3,
         .c4 {
-            background: #573f9b;
+            background: transparent;
             width: 59px;
             height: 51px;
             position: relative;
@@ -73,9 +73,8 @@
             top: 4px;
             left: 264px;
         }
-
         .c4 {
-            top: -47px;
+            top: -46px;
             left: 341px;
         }
 
@@ -220,11 +219,14 @@
                 background: #18132c;
                 display: flex;
                 justify-content: flex-end;
+                position: relative;
 
                 .close {
                     opacity: 1 !important;
                     display: flex;
                     justify-content: flex-end;
+                    position: relative;
+                    z-index: 10;
                 }
 
                 img {
@@ -249,9 +251,9 @@
                     <div class="innerbox">
                         <div class="boxselect">
                             <div class="c1" data-target="#gameModal" data-toggle="modal"></div>
-                            <div class="c2" data-target="#gameModal" data-toggle="modal"></div>
-                            <div class="c3" data-target="#gameModal" data-toggle="modal"></div>
-                            <div class="c4" data-target="#gameModal" data-toggle="modal"></div>
+                            <div class="c2" data-target="#gameModal2" data-toggle="modal"></div>
+                            <div class="c3" data-target="#gameModal3" data-toggle="modal"></div>
+                            <div class="c4"><a href="gameover.html"></a></div>
                         </div>
                     </div>
                 </div>
@@ -259,7 +261,7 @@
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal01 -->
     <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -275,6 +277,9 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -301,7 +306,7 @@
                                                 <img src="images/02.webp">
                                             </div>
                                         </div>
-                                        <img class="d-block" src="images/base.png" alt="First slide">
+                                        <img class="d-block" src="images/g1/01.png" alt="First slide">
                                     </div>
                                 </div>
                             </div>
@@ -330,30 +335,382 @@
                                                 <img src="images/02.webp">
                                             </div>
                                         </div>
-                                        <img class="d-block" src="images/base.png" alt="First slide">
+                                        <img class="d-block" src="images/g1/02.png" alt="First slide">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel_box">
+                                    <div class="icon_gif">
+                                        <div class="name">NFT NAME</div>
+                                        <div class="line"></div>
+                                        <div class="description">Description</div>
+                                        <div class="guia">
+                                            <p>"Thank You Mario, But Our Princess is in Another Castle"</p>
+                                            <img src="images/20.webp">
+                                        </div>
+                                        <a type="button" data-dismiss="modal" aria-label="Close">
+                                            <div class="exit">EXIT</div>
+                                        </a>
+
+                                    </div>
+                                    <div class="img_box">
+                                        <div class="box_header">
+                                            <div class="title">You Won</div>
+                                            <div class="coing">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                            </div>
+                                        </div>
+                                        <img class="d-block" src="images/g1/04.png" alt="First slide">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel_box">
+                                    <div class="icon_gif">
+                                        <div class="name">NFT NAME</div>
+                                        <div class="line"></div>
+                                        <div class="description">Description</div>
+                                        <div class="guia">
+                                            <p>"Thank You Mario, But Our Princess is in Another Castle"</p>
+                                            <img src="images/17.webp">
+                                        </div>
+                                        <a type="button" data-dismiss="modal" aria-label="Close">
+                                            <div class="exit">EXIT</div>
+                                        </a>
+
+                                    </div>
+                                    <div class="img_box">
+                                        <div class="box_header">
+                                            <div class="title">You Won</div>
+                                            <div class="coing">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                            </div>
+                                        </div>
+                                        <img class="d-block" src="images/g1/05.png" alt="First slide">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel_box">
+                                    <div class="icon_gif">
+                                        <div class="name">NFT NAME</div>
+                                        <div class="line"></div>
+                                        <div class="description">Description</div>
+                                        <div class="guia">
+                                            <p>"Thank You Mario, But Our Princess is in Another Castle"</p>
+                                            <img src="images/18.webp">
+                                        </div>
+                                        <a type="button" data-dismiss="modal" aria-label="Close">
+                                            <div class="exit">EXIT</div>
+                                        </a>
+
+                                    </div>
+                                    <div class="img_box">
+                                        <div class="box_header">
+                                            <div class="title">You Won</div>
+                                            <div class="coing">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                            </div>
+                                        </div>
+                                        <img class="d-block" src="images/g1/06.png" alt="First slide">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel_box">
+                                    <div class="icon_gif">
+                                        <div class="name">NFT NAME</div>
+                                        <div class="line"></div>
+                                        <div class="description">Description</div>
+                                        <div class="guia">
+                                            <p>"Thank You Mario, But Our Princess is in Another Castle"</p>
+                                            <img src="images/19.webp">
+                                        </div>
+                                        <a type="button" data-dismiss="modal" aria-label="Close">
+                                            <div class="exit">EXIT</div>
+                                        </a>
+
+                                    </div>
+                                    <div class="img_box">
+                                        <div class="box_header">
+                                            <div class="title">You Won</div>
+                                            <div class="coing">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                            </div>
+                                        </div>
+                                        <img class="d-block" src="images/g1/03.png" alt="First slide">
                                     </div>
 
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                </div>
+            </div>
+    </div>
+
+    <!-- Modal02 -->
+    <div class="modal fade" id="gameModal2" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/10.webp">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel_box">
+                                    <div class="icon_gif">
+                                        <div class="name">NFT NAME</div>
+                                        <div class="line"></div>
+                                        <div class="description">Description</div>
+                                        <div class="guia">
+                                            <p>"Get up. Let's go again..."</p>
+                                            <img src="images/06.webp">
+                                        </div>
+                                        <a type="button" data-dismiss="modal" aria-label="Close">
+                                            <div class="exit">EXIT</div>
+                                        </a>
+                                    </div>
+                                    <div class="img_box">
+                                        <div class="box_header">
+                                            <div class="title">You Won</div>
+                                            <div class="coing">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                            </div>
+                                        </div>
+                                        <img class="d-block" src="images/g2/01.png" alt="First slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel_box">
+                                    <div class="icon_gif">
+                                        <div class="name">NFT NAME</div>
+                                        <div class="line"></div>
+                                        <div class="description">Description</div>
+                                        <div class="guia">
+                                            <p>"Get up. Let's go again..."</p>
+                                            <img src="images/12.webp">
+                                        </div>
+                                        <a type="button" data-dismiss="modal" aria-label="Close">
+                                            <div class="exit">EXIT</div>
+                                        </a>
+                                    </div>
+                                    <div class="img_box">
+                                        <div class="box_header">
+                                            <div class="title">You Won</div>
+                                            <div class="coing">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                                <img src="images/02.webp">
+                                            </div>
+                                        </div>
+                                        <img class="d-block" src="images/g2/02.png" alt="First slide">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+      
+   <!-- Modal03 -->
+   <div class="modal fade" id="gameModal3" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/10.webp">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel_box">
+                                <div class="icon_gif">
+                                    <div class="name">NFT NAME</div>
+                                    <div class="line"></div>
+                                    <div class="description">Description</div>
+                                    <div class="guia">
+                                        <p>"I don't have time for this!"</p>
+                                        <img src="images/21.webp">
+                                    </div>
+                                    <a type="button" data-dismiss="modal" aria-label="Close">
+                                        <div class="exit">EXIT</div>
+                                    </a>
+                                </div>
+                                <div class="img_box">
+                                    <div class="box_header">
+                                        <div class="title">You Won</div>
+                                        <div class="coing">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                        </div>
+                                    </div>
+                                    <img class="d-block" src="images/g3/g1.png" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel_box">
+                                <div class="icon_gif">
+                                    <div class="name">NFT NAME</div>
+                                    <div class="line"></div>
+                                    <div class="description">Description</div>
+                                    <div class="guia">
+                                        <p>"I don't have time for this!"</p>
+                                        <img src="images/22.webp">
+                                    </div>
+                                    <a type="button" data-dismiss="modal" aria-label="Close">
+                                        <div class="exit">EXIT</div>
+                                    </a>
+                                </div>
+                                <div class="img_box">
+                                    <div class="box_header">
+                                        <div class="title">You Won</div>
+                                        <div class="coing">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                        </div>
+                                    </div>
+                                    <img class="d-block" src="images/g3/g2.png" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel_box">
+                                <div class="icon_gif">
+                                    <div class="name">NFT NAME</div>
+                                    <div class="line"></div>
+                                    <div class="description">Description</div>
+                                    <div class="guia">
+                                        <p>"I don't have time for this!"</p>
+                                        <img src="images/23.webp">
+                                    </div>
+                                    <a type="button" data-dismiss="modal" aria-label="Close">
+                                        <div class="exit">EXIT</div>
+                                    </a>
+                                </div>
+                                <div class="img_box">
+                                    <div class="box_header">
+                                        <div class="title">You Won</div>
+                                        <div class="coing">
+                                            <img src="images/02.webp">
+                                        </div>
+                                    </div>
+                                    <img class="d-block" src="images/g3/g3.png" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel_box">
+                                <div class="icon_gif">
+                                    <div class="name">NFT NAME</div>
+                                    <div class="line"></div>
+                                    <div class="description">Description</div>
+                                    <div class="guia">
+                                        <p>"I don't have time for this!"</p>
+                                        <img src="images/24.webp">
+                                    </div>
+                                    <a type="button" data-dismiss="modal" aria-label="Close">
+                                        <div class="exit">EXIT</div>
+                                    </a>
+                                </div>
+                                <div class="img_box">
+                                    <div class="box_header">
+                                        <div class="title">You Won</div>
+                                        <div class="coing">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                        </div>
+                                    </div>
+                                    <img class="d-block" src="images/g3/g4.png" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel_box">
+                                <div class="icon_gif">
+                                    <div class="name">NFT NAME</div>
+                                    <div class="line"></div>
+                                    <div class="description">Description</div>
+                                    <div class="guia">
+                                        <p>"I don't have time for this!"</p>
+                                        <img src="images/25.webp">
+                                    </div>
+                                    <a type="button" data-dismiss="modal" aria-label="Close">
+                                        <div class="exit">EXIT</div>
+                                    </a>
+                                </div>
+                                <div class="img_box">
+                                    <div class="box_header">
+                                        <div class="title">You Won</div>
+                                        <div class="coing">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                            <img src="images/02.webp">
+                                        </div>
+                                    </div>
+                                    <img class="d-block" src="images/g3/g5.png" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
+
+    </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

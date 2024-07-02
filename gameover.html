@@ -8,69 +8,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>GrupoPrimario</title>
     <style>
         body {
-            background-color: black;
+            background-color: #0b0211;
+            background-image: url(images/bkg.png);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position-x: center;
+            background-position-y: top;
+            font-family: "Play", sans-serif;
         }
 
         .box_inner {
-            width: 70%;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            flex-wrap: nowrap;
             margin: 0 auto;
-            gap: 20px;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            a {
-    opacity: 0.1;
-   }
-   a:hover{
-    opacity: 0.9;
-}
-
-            .left,
-            .rigth {
-                width: 20%;
-            }
-        }
-
-        img {
-            max-width: 100%;
-            width: 100%;
-            display: block;
-            object-fit: cover;
-            object-position: center center;
         }
 
         .innerbox {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: space-between;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .box {
-            width: 60%;
-        }
-
-        .inner_title {
-            width: 70%;
-            display: flex;
-            align-items: flex-start;
-            margin: 0 auto;
-            flex-direction: row;
             justify-content: center;
+            align-items: center;
+            .presstart {
+                position: absolute;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        height: 380px;
+        align-items: flex-end;
+        justify-content: center;
+        img {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+}
+    }
+}
+        
+
+        .boxselect {
+            background-image: url(images/bkg02.png);
+            height: 343px;
+            width: 45%;
+            position: absolute;
+            bottom: 0;
+            top: 137px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(5px);
+        }
+
+        .c1,
+        .c2,
+        .c3,
+        .c4 {
+            background: #573f9b;
+            width: 59px;
+            height: 51px;
+            position: relative;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .c1 {
+            top: 30px;
+            left: 265px;
+        }
+
+        .c2 {
+            top: -21px;
+            left: 341px;
+        }
+
+        .c3 {
+            top: 4px;
+            left: 264px;
+        }
+
+        .c4 {
+            top: -47px;
+            left: 341px;
         }
 
         h1 {
@@ -78,14 +100,7 @@
             font-family: "Play", sans-serif;
             font-weight: 700;
             font-style: normal;
-            display: flex;
-            flex-direction: row;
             line-height: 60px;
-            justify-content: center;
-        }
-
-        .gif {
-            width: 20%;
         }
 
         .inner_header {
@@ -93,32 +108,151 @@
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: flex-end;
+            position: relative;
         }
 
         .inner_header img {
-            width: 20%;
+            width: 9%;
+            position: absolute;
+            right: 290px;
+            top: 125px;
         }
 
-        .select {
+        .carousel_box {
             display: flex;
-            width: 100%;
-            height: 500px;
+            flex-direction: row;
+            gap: 20px;
+            background-color: #ba81ff;
+            padding: 2rem;
+
+            .icon_gif {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 20px;
+
+                .exit {
+                    background-color: #ffc858;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0.2rem;
+                    font-family: "Play", sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                    -webkit-box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                    -moz-box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                }
+
+                .name,
+                .description {
+                    color: #7a58bf;
+                    font-weight: bold;
+                    background-color: white;
+                    padding: 0.2rem;
+                    box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                    -webkit-box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                    -moz-box-shadow: 4px 3px 0px 3px rgba(45, 33, 94, 1);
+                }
+
+                .guia {
+                    display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
             align-items: center;
+                    p {
+                        color: white;
+                        line-height: 17px;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 0.8rem;
+                    }
+
+                    img {
+                        margin: 10px auto;
+                        padding: 0px;
+                    }
+                }
+
+                .line {
+                    width: 100%;
+                    height: 11px;
+                    background-color: white;
+                }
+            }
+
+            .carousel-inner {
+                width: 60%;
+            }
+
+            img {
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            .img_box {
+                background: white;
+                padding: 1rem;
+                box-shadow: 11px 6px 0px 3px rgba(45, 33, 94, 1);
+                -webkit-box-shadow: 11px 6px 0px 3px rgba(45, 33, 94, 1);
+                -moz-box-shadow: 11px 6px 0px 3px rgba(45, 33, 94, 1);
+            }
+
+            .box_header {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                border-bottom: 1px solid #7a58bf;
+                padding-bottom: 0.8rem;
+                align-items: center;
+
+                .title {
+                    width: 50%;
+                    color: #7a58bf;
+                    font-weight: bold;
+                }
+
+                .coing {
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+
+                    img {
+                        width: 10%;
+                    }
+                }
+            }
         }
 
-        .game_select p {
-            color: white;
+        .modal-content {
+            background-color: #7a58bf !important;
+
+            .modal-header {
+                background: #18132c;
+                display: flex;
+                justify-content: flex-end;
+
+                .close {
+                    opacity: 1 !important;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                img {
+                    width: 15%;
+                    filter: invert(1)
+                }
+            }
         }
 
-        .game_select img {
-            width: 100%;
-            margin: 1rem auto;
-            cursor: pointer;
+        .carousel-indicators {
+            bottom: -11px;
         }
-
-
-
-
     </style>
 </head>
 
@@ -128,24 +262,18 @@
             <div class="col-md-12">
                 <div class="box_inner">
                     <div class="innerbox">
-                        <div class="gif">
-                        </div>
-                        <div class="box">
-                            <div class="inner_title"></div>
-                            <div class="select">
-                                <div class="game_select">
-                                    <img src="images/09.webp" id="gameImage">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gif">
-                        </div>
+                        <div class="boxselect"></div>
+                        <div class="presstart"><img src="images/09.webp"></div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
